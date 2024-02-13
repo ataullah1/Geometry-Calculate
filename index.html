@@ -1,14 +1,312 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="htmlclass">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geometry Calculate</title>
     <link rel="stylesheet" href="./style/style.css" />
+    <!-- Daisy UI CDN link -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    /> -->
   </head>
-  <body>
-    <h1>Geometry Calculate</h1>
-
+  <body class="min-h-screen box-border">
+    <div class="m-auto w-[95%] py-8">
+      <!-- Header-- -->
+      <div
+        class="bg-sky-600 bg-opacity-10 rounded-lg flex items-center justify-between px-11 py-3 mb-11"
+      >
+        <div>
+          <span
+            class="text-neutral-900 text-opacity-80 text-4xl font-bold font-['Inter']"
+            >Interactive <br /></span
+          ><span
+            class="text-neutral-900 text-opacity-60 text-2xl font-medium font-['Inter'] leading-10 tracking-wider"
+            >Geometry Genius</span
+          >
+        </div>
+        <div
+          class="text-white text-xl font-bold font-['Inter'] leading-[30px] bg-[#1090D8] px-8 py-2 rounded-md cursor-pointer"
+        >
+          Blog
+        </div>
+      </div>
+      <!-- section  -->
+      <div class="flex flex-col sm:flex-row m-auto gap-2 w-full">
+        <!-- Card -->
+        <div
+          class="w-auto xl:w-[80%] m-auto grid lg:grid-cols-2 xl:grid-cols-3 lg:grid-rows-3 xl:grid-rows-2 gap-3"
+        >
+          <div
+            class="pt-7 bg-white shadow-x text-centerl rounded-lg border border-solid border-[rgba(17, 17, 17, 0.10)] max-w-[375px]"
+          >
+            <div class="text-center">
+              <img
+                class="m-auto"
+                src="./images/triangle.png"
+                alt="triangle.png"
+              />
+            </div>
+            <div class="p-5 text-center text-[#414141]">
+              <h2 class="text-2xl font-bold">Triangle</h2>
+              <p class="font-normal text-base pt-2 pb-4">
+                Area (A) = 0.5 × b × h
+              </p>
+              <div id="inputSec" class="flex flex-row justify-between">
+                <div class="flex">
+                  <input
+                    class="bg-[#F1F1F1] rounded py-1 px-2 w-full"
+                    placeholder="b"
+                    type="number"
+                    id=""
+                  /><label class="pl-1 pr-3">cm</label>
+                </div>
+                <div class="flex">
+                  <input
+                    class="bg-[#F1F1F1] rounded py-1 px-2 w-full"
+                    placeholder="b"
+                    type="number"
+                    id=""
+                  /><label class="pl-1 pr-3">cm</label>
+                </div>
+              </div>
+              <p class="py-6">Answer=</p>
+              <div class="card-actions justify-end">
+                <button
+                  class="bg-[#1090D8] rounded-lg py-3 w-full text-center text-white text-xl font-bold"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="pt-7 bg-white shadow-x text-centerl rounded-lg border border-solid border-[rgba(17, 17, 17, 0.10)] max-w-[375px]"
+          >
+            <div class="text-center">
+              <img
+                class="m-auto"
+                src="./images/triangle.png"
+                alt="triangle.png"
+              />
+            </div>
+            <div class="p-5 text-center text-[#414141]">
+              <h2 class="text-2xl font-bold">Triangle</h2>
+              <p class="font-normal text-base pt-2 pb-4">
+                Area (A) = 0.5 × b × h
+              </p>
+              <div id="inputSec" class="flex flex-row justify-between">
+                <div class="flex">
+                  <input
+                    class="bg-[#F1F1F1] rounded py-1 px-2 w-full"
+                    placeholder="b"
+                    type="number"
+                    id=""
+                  /><label class="pl-1 pr-3">cm</label>
+                </div>
+                <div class="flex">
+                  <input
+                    class="bg-[#F1F1F1] rounded py-1 px-2 w-full"
+                    placeholder="b"
+                    type="number"
+                    id=""
+                  /><label class="pl-1 pr-3">cm</label>
+                </div>
+              </div>
+              <p class="py-6">Answer=</p>
+              <div class="card-actions justify-end">
+                <button
+                  class="bg-[#1090D8] rounded-lg py-3 w-full text-center text-white text-xl font-bold"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="pt-7 bg-white shadow-x text-centerl rounded-lg border border-solid border-[rgba(17, 17, 17, 0.10)] max-w-[375px]"
+          >
+            <div class="text-center">
+              <img
+                class="m-auto"
+                src="./images/triangle.png"
+                alt="triangle.png"
+              />
+            </div>
+            <div class="p-5 text-center text-[#414141]">
+              <h2 class="text-2xl font-bold">Triangle</h2>
+              <p class="font-normal text-base pt-2 pb-4">
+                Area (A) = 0.5 × b × h
+              </p>
+              <div id="inputSec" class="flex flex-row justify-between">
+                <div class="flex">
+                  <input
+                    class="bg-[#F1F1F1] rounded py-1 px-2 w-full"
+                    placeholder="b"
+                    type="number"
+                    id=""
+                  /><label class="pl-1 pr-3">cm</label>
+                </div>
+                <div class="flex">
+                  <input
+                    class="bg-[#F1F1F1] rounded py-1 px-2 w-full"
+                    placeholder="b"
+                    type="number"
+                    id=""
+                  /><label class="pl-1 pr-3">cm</label>
+                </div>
+              </div>
+              <p class="py-6">Answer=</p>
+              <div class="card-actions justify-end">
+                <button
+                  class="bg-[#1090D8] rounded-lg py-3 w-full text-center text-white text-xl font-bold"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="pt-7 bg-white shadow-x text-centerl rounded-lg border border-solid border-[rgba(17, 17, 17, 0.10)] max-w-[375px]"
+          >
+            <div class="text-center">
+              <img
+                class="m-auto"
+                src="./images/triangle.png"
+                alt="triangle.png"
+              />
+            </div>
+            <div class="p-5 text-center text-[#414141]">
+              <h2 class="text-2xl font-bold">Triangle</h2>
+              <p class="font-normal text-base pt-2 pb-4">
+                Area (A) = 0.5 × b × h
+              </p>
+              <div id="inputSec" class="flex flex-row justify-between">
+                <div class="flex">
+                  <input
+                    class="bg-[#F1F1F1] rounded py-1 px-2 w-full"
+                    placeholder="b"
+                    type="number"
+                    id=""
+                  /><label class="pl-1 pr-3">cm</label>
+                </div>
+                <div class="flex">
+                  <input
+                    class="bg-[#F1F1F1] rounded py-1 px-2 w-full"
+                    placeholder="b"
+                    type="number"
+                    id=""
+                  /><label class="pl-1 pr-3">cm</label>
+                </div>
+              </div>
+              <p class="py-6">Answer=</p>
+              <div class="card-actions justify-end">
+                <button
+                  class="bg-[#1090D8] rounded-lg py-3 w-full text-center text-white text-xl font-bold"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="pt-7 bg-white shadow-x text-centerl rounded-lg border border-solid border-[rgba(17, 17, 17, 0.10)] max-w-[375px]"
+          >
+            <div class="text-center">
+              <img
+                class="m-auto"
+                src="./images/triangle.png"
+                alt="triangle.png"
+              />
+            </div>
+            <div class="p-5 text-center text-[#414141]">
+              <h2 class="text-2xl font-bold">Triangle</h2>
+              <p class="font-normal text-base pt-2 pb-4">
+                Area (A) = 0.5 × b × h
+              </p>
+              <div id="inputSec" class="flex flex-row justify-between">
+                <div class="flex">
+                  <input
+                    class="bg-[#F1F1F1] rounded py-1 px-2 w-full"
+                    placeholder="b"
+                    type="number"
+                    id=""
+                  /><label class="pl-1 pr-3">cm</label>
+                </div>
+                <div class="flex">
+                  <input
+                    class="bg-[#F1F1F1] rounded py-1 px-2 w-full"
+                    placeholder="b"
+                    type="number"
+                    id=""
+                  /><label class="pl-1 pr-3">cm</label>
+                </div>
+              </div>
+              <p class="py-6">Answer=</p>
+              <div class="card-actions justify-end">
+                <button
+                  class="bg-[#1090D8] rounded-lg py-3 w-full text-center text-white text-xl font-bold"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="pt-7 bg-white shadow-x text-centerl rounded-lg border border-solid border-[rgba(17, 17, 17, 0.10)] max-w-[375px]"
+          >
+            <div class="text-center">
+              <img
+                class="m-auto"
+                src="./images/triangle.png"
+                alt="triangle.png"
+              />
+            </div>
+            <div class="p-5 text-center text-[#414141]">
+              <h2 class="text-2xl font-bold">Triangle</h2>
+              <p class="font-normal text-base pt-2 pb-4">
+                Area (A) = 0.5 × b × h
+              </p>
+              <div id="inputSec" class="flex flex-row justify-between">
+                <div class="flex">
+                  <input
+                    class="bg-[#F1F1F1] rounded py-1 px-2 w-full"
+                    placeholder="b"
+                    type="number"
+                    id=""
+                  /><label class="pl-1 pr-3">cm</label>
+                </div>
+                <div class="flex">
+                  <input
+                    class="bg-[#F1F1F1] rounded py-1 px-2 w-full"
+                    placeholder="b"
+                    type="number"
+                    id=""
+                  /><label class="pl-1 pr-3">cm</label>
+                </div>
+              </div>
+              <p class="py-6">Answer=</p>
+              <div class="card-actions justify-end">
+                <button
+                  class="bg-[#1090D8] rounded-lg py-3 w-full text-center text-white text-xl font-bold"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Area Calculation -->
+        <div
+          class="sm:w-[50%] md:w-full xl:w-[20%] md:ml-auto pt-4 bg-white shadow-x text-centerl rounded-lg border border-solid border-[rgba(17, 17, 17, 0.10)] max-w-[375px] min-h-40"
+        >
+          <h1 class="text-center underline text-2xl px-2">Area Calculation</h1>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/style.js"></script>
   </body>
 </html>
