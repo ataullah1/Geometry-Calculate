@@ -16,13 +16,18 @@ document.getElementById('btnTriangle').addEventListener('click', function () {
   const output = document.getElementById('triangleOutput');
   output.innerText = answer.toFixed(4);
 
+  // call gamete name
+  const gNum = document.getElementById('tName').innerText;
   // Area section added function this value
   const areaCalculateSec = document.getElementById('areaCalculate');
-
+  // Element create for areaCalculate section
   const areaCalculateSecValue = document.createElement('div');
-  areaCalculateSecValue.innerHTML = `  <h2 class="text-2xl">Triangle:</h2>
-  <p class="text-lg">20 × 23 = 3435</p>
+  areaCalculateSecValue.innerHTML = `<h2 class="text-2xl">${gNum}:</h2>
+  <p class="text-lg">${base} × ${height} = ${answer.toFixed(
+    4
+  )}cm<sup>2</sup></p>
   <hr />`;
+  areaCalculateSec.appendChild(areaCalculateSecValue);
 });
 
 // Rectangle Function
@@ -41,6 +46,17 @@ document.getElementById('btnRectangle').addEventListener('click', function () {
 
   const output = document.getElementById('rectangleOutput');
   output.innerText = answer.toFixed(4);
+
+  // call gamete name
+  const gNum = document.getElementById('rName').innerText;
+  // Area section added function this value
+  const areaCalculateSec = document.getElementById('areaCalculate');
+  // Element create for areaCalculate section
+  const areaCalculateSecValue = document.createElement('div');
+  areaCalculateSecValue.innerHTML = `<h2 class="text-2xl">${gNum}:</h2>
+  <p class="text-lg">${width} × ${left} = ${answer.toFixed(4)}cm<sup>2</sup></p>
+  <hr />`;
+  areaCalculateSec.appendChild(areaCalculateSecValue);
 });
 
 // Parallelogram Function
@@ -61,6 +77,19 @@ document
 
     const output = document.getElementById('parallelogramOutput');
     output.innerText = answer.toFixed(4);
+
+    // call gamete name
+    const gNum = document.getElementById('paraName').innerText;
+    // Area section added function this value
+    const areaCalculateSec = document.getElementById('areaCalculate');
+    // Element create for areaCalculate section
+    const areaCalculateSecValue = document.createElement('div');
+    areaCalculateSecValue.innerHTML = `<h2 class="text-2xl">${gNum}:</h2>
+  <p class="text-lg">${base} × ${height} = ${answer.toFixed(
+      4
+    )}cm<sup>2</sup></p>
+  <hr />`;
+    areaCalculateSec.appendChild(areaCalculateSecValue);
   });
 
 // Rhombus Function
@@ -79,6 +108,19 @@ document.getElementById('btnRhombus').addEventListener('click', function () {
 
   const output = document.getElementById('rhombusOutput');
   output.innerText = answer.toFixed(4);
+
+  // call gamete name
+  const gNum = document.getElementById('rName').innerText;
+  // Area section added function this value
+  const areaCalculateSec = document.getElementById('areaCalculate');
+  // Element create for areaCalculate section
+  const areaCalculateSecValue = document.createElement('div');
+  areaCalculateSecValue.innerHTML = `<h2 class="text-2xl">${gNum}:</h2>
+  <p class="text-lg">${base} × ${height} ÷ 2 = ${answer.toFixed(
+    4
+  )}cm<sup>2</sup></p>
+  <hr />`;
+  areaCalculateSec.appendChild(areaCalculateSecValue);
 });
 
 // Pentagon Function
@@ -98,6 +140,19 @@ document.getElementById('btnPentagon').addEventListener('click', function () {
 
   const output = document.getElementById('pentagonOutput');
   output.innerText = answer.toFixed(4);
+
+  // call gamete name
+  const gNum = document.getElementById('pentName').innerText;
+  // Area section added function this value
+  const areaCalculateSec = document.getElementById('areaCalculate');
+  // Element create for areaCalculate section
+  const areaCalculateSecValue = document.createElement('div');
+  areaCalculateSecValue.innerHTML = `<h2 class="text-2xl">${gNum}:</h2>
+  <p class="text-lg">0.5 × ${perimeter} × ${apothem} = ${answer.toFixed(
+    4
+  )}cm<sup>2</sup></p>
+  <hr />`;
+  areaCalculateSec.appendChild(areaCalculateSecValue);
 });
 
 //  Ellipse Function
@@ -118,4 +173,17 @@ document.getElementById('btnEllipse').addEventListener('click', function () {
   output.innerText = answer.toFixed(4);
 
   // Area section added function this value
+
+  // call gamete name
+  const gNum = document.getElementById('elName').innerText;
+  // Area section added function this value
+  const areaCalculateSec = document.getElementById('areaCalculate');
+  // Element create for areaCalculate section
+  const areaCalculateSecValue = document.createElement('div');
+  areaCalculateSecValue.innerHTML = `<h2 class="text-2xl">${gNum}:</h2>
+  <p class="text-lg">3.1416 × ${a} × ${b} = ${answer.toFixed(
+    4
+  )}cm<sup>2</sup></p>
+  <hr />`;
+  areaCalculateSec.appendChild(areaCalculateSecValue);
 });
