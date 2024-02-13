@@ -15,6 +15,14 @@ document.getElementById('btnTriangle').addEventListener('click', function () {
 
   const output = document.getElementById('triangleOutput');
   output.innerText = answer.toFixed(4);
+
+  // Area section added function this value
+  const areaCalculateSec = document.getElementById('areaCalculate');
+
+  const areaCalculateSecValue = document.createElement('div');
+  areaCalculateSecValue.innerHTML = `  <h2 class="text-2xl">Triangle:</h2>
+  <p class="text-lg">20 × 23 = 3435</p>
+  <hr />`;
 });
 
 // Rectangle Function
@@ -108,4 +116,6 @@ document.getElementById('btnEllipse').addEventListener('click', function () {
 
   const output = document.getElementById('ellipseOutput');
   output.innerText = answer.toFixed(4);
+
+  // Area section added function this value
 });
